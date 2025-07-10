@@ -1,0 +1,48 @@
+.login-card{
+    height: 30rem;
+    width: 33rem;
+    padding: 20px;
+    z-index: 2;
+    position: absolute;
+    top: 90px;
+    right: 60px;
+    margin: 0px;
+    border-radius: 2rem;
+    border: 1px solid #021E37;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    opacity: 1;
+}
+
+.form-check{
+    text-decoration: none;
+}
+
+.input-info{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.background-img{
+    width: 100%;
+    height: 100vh;
+    background-image: url('assets/loginpage.jpg');
+    background-size: cover;
+    filter: blur(4px);
+}
+
+img{
+    height: 80px;
+    margin-left: 40px; 
+    position: absolute;
+    z-index: 2;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+

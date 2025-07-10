@@ -1,0 +1,113 @@
+.main {
+    min-height: 100vh;
+    position: relative;
+}
+
+.login-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    text-align: left;
+    z-index: 2;
+    position: absolute;
+    margin: 0px;
+    height: auto;
+    min-height: 400px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+/* Responsive positioning for login card */
+@media (min-width: 1024px) {
+    .login-card {
+        width: 30rem;
+        top: 90px;
+        right: 60px;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    .login-card {
+        width: 28rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media (max-width: 767px) {
+    .login-card {
+        width: 85%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.form-check {
+    text-decoration: none;
+}
+
+.input-info {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.background-img {
+    width: 100%;
+    height: 100vh;
+    background-image: url('assets/loginpage.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px);
+}
+
+img {
+    height: 80px;
+    position: absolute;
+    z-index: 2;
+    margin-top: 20px;
+    left: 20px;
+}
+
+.button {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* Responsive adjustments for buttons */
+@media (max-width: 480px) {
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .buttons .button {
+        width: 100%;
+    }
+    
+    img {
+        height: 60px;
+        margin-top: 15px;
+        left: 15px;
+    }
+}
+
+/* Ensure form inputs don't overflow on small screens */
+.field {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.input {
+    width: 100%;
+    box-sizing: border-box;
+}
