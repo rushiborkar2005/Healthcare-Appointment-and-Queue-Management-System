@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+    <link rel="stylesheet" href="DoctorHomePage.css">
+      <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+
+</head>
+
+<style>
+  .welcome-text {
+    height: 200px;
+    background-color: #bbebf7;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+}
+.subtitle{
+   color: red;
+    font-weight: bolder; 
+}
+.has-text-grey{
+  color: black;
+}
+</style>
+
+<body>
+  <!-- Header -->
+  <section class="section py-3" style="background-color: #021E37;">
+    <div class="container is-flex is-justify-content-space-between is-align-items-center is-flex-wrap-wrap">
+      <img src="../assets/Logo.png" alt="logo" style="max-height: 60px" />
+      <a class="button is-warning" href="../../Backend/logout.php">Logout</a>
+    </div>
+  </section>
+
+  <!-- Navbar -->
+  <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navMenu" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item is-active" href="#">Home</a>
+        <a class="navbar-item" href="Appointments.php">Appointments</a>
+      </div> 
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="field has-addons">
+            <div class="control">
+              <input class="input" type="text" placeholder="Search">
+            </div>
+            <div class="control">
+              <button class="button is-info">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+        <hr class="my-0">
+
+
+  <!-- Main Content -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Welcome Text -->
+      <div class="box has-text-centered mb-6 welcome-text">
+        <h3 class="title is-4">Welcome Doctor!</h3>
+        <h4 class="subtitle is-5">We're honored to have you with us.</h4>
+        <p class="has-text-grey">
+          Your dedication inspires us, and we're here to support you in every step toward better patient care.
+        </p>
+      </div>
+
+      <!-- Feature Card -->
+      <div class="columns is-vcentered is-multiline box">
+        <div class="column is-12-mobile is-6-desktop">
+          <h5 class="title is-5 has-text-info">All-in-one medical office software</h5>
+          <p class="mb-4">
+            Modern independent practices need software and services to automate and streamline workflow to remain competitive.
+            And patients today want to be more connected to their healthcare experience.
+            Our suite includes legendary billing, flexible scheduling, simple charting, accurate reporting, and easy-to-use patient relationship management tools.
+          </p>
+          <button class="button is-info is-rounded">Explore More</button>
+        </div>
+        <div class="column is-12-mobile is-6-desktop">
+          <figure class="image is-16by9">
+            <img src="https://healthray.com/wp-content/uploads/2023/12/Key-Medical-Office-Software-Program-Features-And-Requirements.webp" alt="Medical Software" style="width: 100%; height: auto;">
+          </figure>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>&copy; 2025 Your Health Platform. All rights reserved.</p>
+    </div>
+  </footer></body>
+<script>
+   // Bulma Navbar Script 
+    document.addEventListener('DOMContentLoaded', () => {
+      const burger = document.querySelector('.navbar-burger');
+      const menu = document.querySelector('#navMenu');
+      burger.addEventListener('click', () => {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+      });
+    });
+</script>
+</html>

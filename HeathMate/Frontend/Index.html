@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medical Office Software</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+  <link rel="stylesheet" href="Index.css" />
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="section py-3" style="background-color: #021E37;">
+    <div class="container">
+      <div class="is-flex is-align-items-center is-justify-content-space-between is-flex-wrap-wrap">
+        <img src="assets/Logo.png" alt="logo" style="max-height: 60px;" />
+        <a href="loginPage.html">
+          <button class="button is-warning mt-2-mobile">Login</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navMenu" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item is-active" href="#">Home</a>
+        <a class="navbar-item" href="#">About</a>
+        <a class="navbar-item" href="#">Contact</a>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="field has-addons">
+            <div class="control">
+              <input class="input" type="text" placeholder="Search" />
+            </div>
+            <div class="control">
+              <button class="button is-info">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="section">
+    <div class="container">
+      <div class="columns is-vcentered is-multiline">
+        <!-- Text -->
+        <div class="column is-12-mobile is-6-tablet is-6-desktop">
+          <h5 class="title is-4 has-text-info mb-4">ALL-IN-ONE MEDICAL OFFICE SOFTWARE</h5>
+          <p class="content has-text-grey-light mb-5">
+            Modern independent practices need software and services to automate and streamline workflow to remain competitive.
+            And patients today want to be more connected to their healthcare experience.
+            Our suite includes legendary billing, flexible scheduling, simple charting, accurate reporting, and easy-to-use patient relationship management tools.
+          </p>
+          <a class="button is-info is-rounded has-text-weight-bold px-5" href="#">
+            EXPLORE MORE <span class="icon ml-2"><i class="fas fa-arrow-right"></i></span>
+          </a>
+        </div>
+
+        <!-- Image -->
+        <div class="column is-12-mobile is-6-tablet is-6-desktop">
+          <figure class="image is-4by3">
+            <img
+              src="https://healthray.com/wp-content/uploads/2023/12/Key-Medical-Office-Software-Program-Features-And-Requirements.webp"
+              class="is-rounded"
+              alt="Medical Software"
+            />
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="content has-text-centered" style="color:white">
+      <p>&copy; 2025 Your Health Platform. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS for burger -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const burger = document.querySelector('.navbar-burger');
+      const menu = document.querySelector('#navMenu');
+      burger.addEventListener('click', () => {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+      });
+    });
+  </script>
+</body>
+</html>
